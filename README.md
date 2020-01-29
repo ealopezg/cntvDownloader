@@ -22,15 +22,7 @@ The program will start to download the tv show using a folder hierarchy (format 
 
 ## Testing as an API
 
-Using a simple deploy in Heroku you can check operation of the scrapper.
-API EndPoint : **http://capintv.herokuapp.com/**
+Using a simple deploy in Heroku you can check operation of the scrapper, replace **URL** with the url of the movie/tvshow.
 ```
-GET http://capintv.herokuapp.com/?url=https://www.cntv.cl/la-voz-en-off/cntv/2017-09-26/134030.html
-```
-```
-{
-    "title": "La Voz en Off",
-    "type": "movie",
-    "url": "https://www.cntv.cl/cntv/site/mm/20170926/mmedia/multimedia_video99920170926130908.mp4"
-}
+GET http://capintv.herokuapp.com/?url=URL
 ```
