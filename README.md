@@ -1,6 +1,6 @@
 # A tool to download series and movies from the Consejo Nacional de Televisión website
 
-A basic python scrapper tool to download series and movies from the CNTV (Consejo Nacional de Television or *National Television Council*) website. It receives the link from the tv show and asks for the name of the tvshow and the season number. It uses BeatifulSoup to scrap the website and wget to download the files.
+A basic python scrapper tool to download series and movies from the CNTV (Consejo Nacional de Television or *National Television Council*) website. It receives the link from the tv show and asks for the name of the tvshow and the season number. It uses BeautifulSoup to scrap the website and wget to download the files.
 
 ## How to use it
 
@@ -25,4 +25,9 @@ The program will start to download the tv show using a folder hierarchy (format 
 Using a simple deploy in Heroku you can check operation of the scrapper, replace **URL** with the url of the movie/tvshow.
 ```
 GET http://capintv.herokuapp.com/?url=URL
+```
+
+Or just run the app.py file in the environment created with Pipenv
+```
+pipenv run src/app.py
 ```
