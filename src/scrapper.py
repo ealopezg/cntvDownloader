@@ -15,7 +15,11 @@ def getTitles(url):
 class Scrapper(object):        
     @staticmethod
     def getMedia(url):
-        page = requests.get(url)
+        try:
+            page = requests.get(url)
+        except:
+            return None
+        
         soup = BeautifulSoup(page.content, 'html.parser')
         media = getTitles(url)
         if media == None:
@@ -48,4 +52,4 @@ class Scrapper(object):
             return media
         else:
             return None
-        
+
